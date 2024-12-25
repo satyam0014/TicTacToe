@@ -38,7 +38,6 @@ const compresponse = () => {
         btns[choice].innerText = "X";
         btns[choice].classList.add("textcolor");
         btns[choice].disabled = true;
-        console.log(btns[choice]);
         count++;
     }
 }
@@ -53,7 +52,6 @@ btns.forEach((btn) => {
             count++;
             turn0 = false;
             btn.disabled = true;
-            console.log(btn);
             if (count < 9) {
                 compresponse();
                 turn0 = true;
@@ -75,7 +73,6 @@ btns.forEach((btn) => {
 
         let iswinner = checkWinner();
         if (count === 9 && !iswinner) {
-            console.log("draw");
             msgs.innerText = "Match - Draw"
             msgContainer.classList.remove("hide");
             // content.classList.add("hide");
