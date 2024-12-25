@@ -11,8 +11,8 @@ body{
     
 }
 .head{
-    margin-top: 0.5wh;
-    font-size: 3vw;
+    margin-top: 2vh;
+    font-size: 7vmin;
     font-family: cursive;
     color: #FFEFD3;
        
@@ -22,7 +22,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 80vmin;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .box{
