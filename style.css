@@ -62,7 +62,8 @@ body{
 .msg-container{
 
     background-color: #001B2E;
-    height: 100vmin;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;

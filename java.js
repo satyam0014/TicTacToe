@@ -4,6 +4,8 @@ let turn0 = true;//player0 or playerX
 let msgContainer = document.querySelector(".msg-container")
 let msgs = document.querySelector("#msg");
 let startnewgame = document.querySelector(".newgame")
+let content=document.querySelector("main");
+console.log(content);
 let count = 0;
 let winPatterns = [
     [0, 1, 2],
@@ -43,6 +45,8 @@ btns.forEach((btn) => {
             console.log("draw");
             msgs.innerText = "Match - Draw"
             msgContainer.classList.remove("hide");
+            content.classList.add("hide");
+
 
         }
 
@@ -57,6 +61,7 @@ const resetgame = () => {
         turn0 = true;
         count=0;
         msgContainer.classList.add("hide");
+        content.classList.remove("hide");
     }
 };
 
@@ -81,6 +86,7 @@ const checkWinner = () => {
                 disabled();
                 msgs.innerText = "Congratulation, Winner is O";
                 msgContainer.classList.remove("hide");
+                content.classList.add("hide");
                 return true;
 
 
@@ -89,6 +95,7 @@ const checkWinner = () => {
                 disabled();
                 msgs.innerText = "Congratulation, Winner is X";
                 msgContainer.classList.remove("hide");
+                content.classList.add("hide");
                 return true;
 
             }
